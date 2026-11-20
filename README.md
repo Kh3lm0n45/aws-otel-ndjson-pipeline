@@ -1,5 +1,7 @@
 # Serverless OpenTelemetry log pipeline on AWS
 
+[![tests](https://github.com/Kh3lm0n45/aws-otel-ndjson-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/Kh3lm0n45/aws-otel-ndjson-pipeline/actions/workflows/tests.yml)
+
 An independent demonstrator of two related patterns for getting third-party
 telemetry into a SIEM safely:
 
