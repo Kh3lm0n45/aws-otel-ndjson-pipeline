@@ -1,0 +1,9 @@
+# Copy to .leak-patterns.private (gitignored) and fill with REAL terms.
+# One case-insensitive extended regex per line. Never commit the private file.
+# Suggested categories:
+#   organisation names, supplier and vendor names
+#   real AWS account IDs, real bucket names, real asset/site names
+#   usernames, work email domain, internal hostnames, internal IP ranges
+#   KMS key IDs, role/principal names, ticket or change references
+example-private-term-1
+example-private-term-2

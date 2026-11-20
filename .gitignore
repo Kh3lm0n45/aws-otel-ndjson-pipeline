@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.leak-patterns.private
+*.pem
+*.key
+*.csr
+*.srl
+.aws/
+build/
+dist/
+.env

@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "rolesanywhere.amazonaws.com" },
+      "Action": ["sts:AssumeRole", "sts:TagSession", "sts:SetSourceIdentity"],
+      "Condition": {
+        "ArnEquals": {
+          "aws:SourceArn": "arn:aws:rolesanywhere:eu-west-2:123456789012:trust-anchor/00000000-0000-0000-0000-000000000000"
+        },
+        "StringEquals": {
+          "aws:PrincipalTag/x509Subject/CN": "example-collector-01"
+        }
+      }
+    }
+  ]
+}

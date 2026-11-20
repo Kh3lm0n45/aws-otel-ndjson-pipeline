@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenySessionsIssuedBeforeRevocation",
+      "Effect": "Deny",
+      "Action": "*",
+      "Resource": "*",
+      "Condition": {
+        "DateLessThan": { "aws:TokenIssueTime": "2026-01-01T12:00:00Z" }
+      }
+    }
+  ]
+}

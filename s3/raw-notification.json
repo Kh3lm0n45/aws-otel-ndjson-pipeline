@@ -1,0 +1,12 @@
+{
+  "LambdaFunctionConfigurations": [
+    {
+      "Id": "convert-new-raw-objects",
+      "LambdaFunctionArn": "arn:aws:lambda:eu-west-2:123456789012:function:otel-to-ndjson",
+      "Events": ["s3:ObjectCreated:*"],
+      "Filter": {
+        "Key": { "FilterRules": [{ "Name": "suffix", "Value": ".json.gz" }] }
+      }
+    }
+  ]
+}
